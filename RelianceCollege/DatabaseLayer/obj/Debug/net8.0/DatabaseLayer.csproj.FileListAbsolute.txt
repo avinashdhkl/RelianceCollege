@@ -1,0 +1,12 @@
+D:\BCA\Project\RelianceCollege\DatabaseLayer\bin\Debug\net8.0\DatabaseLayer.deps.json
+D:\BCA\Project\RelianceCollege\DatabaseLayer\bin\Debug\net8.0\DatabaseLayer.dll
+D:\BCA\Project\RelianceCollege\DatabaseLayer\bin\Debug\net8.0\DatabaseLayer.pdb
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.csproj.AssemblyReference.cache
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.AssemblyInfoInputs.cache
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.AssemblyInfo.cs
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.csproj.CoreCompileInputs.cache
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.dll
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\refint\DatabaseLayer.dll
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.pdb
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\ref\DatabaseLayer.dll

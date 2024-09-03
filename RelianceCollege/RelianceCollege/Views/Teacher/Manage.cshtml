@@ -1,0 +1,15 @@
+﻿@model BusinessLayer.Business.Model.Teacher.TeacherModel;
+@{
+    ViewData["Title"] = "Manage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="form-floating">
+        <select class="form-select" asp-for="Gender" asp-items="@Model.GenderList" aria-label="Floating label select example">
+            <option value="">Please Select Gender</option>          
+        </select>
+        <label for="floatingSelect">Gender</label>
+    </div>
+</div>
+
