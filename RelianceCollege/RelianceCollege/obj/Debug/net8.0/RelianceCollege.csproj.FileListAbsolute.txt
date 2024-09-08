@@ -267,3 +267,4 @@ D:\BCA\Project\RelianceCollege\RelianceCollege\bin\Debug\net8.0\Microsoft.AspNet
 D:\BCA\Project\RelianceCollege\RelianceCollege\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 D:\BCA\Project\RelianceCollege\RelianceCollege\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\BCA\Project\RelianceCollege\RelianceCollege\obj\Debug\net8.0\RelianceCollege.MvcApplicationPartsAssemblyInfo.cs
+D:\BCA\Project\RelianceCollege\RelianceCollege\obj\Debug\net8.0\RelianceCollege.sourcelink.json
