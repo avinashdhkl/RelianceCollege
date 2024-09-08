@@ -50,5 +50,28 @@ namespace DatabaseLayer.Execute
 
             }
         }
+
+        public List<T0> ExecuteQuery<T0>(string SqlQuery, object SqlParam, CommandType type = CommandType.StoredProcedure)
+        {
+            using (SqlConnection sqlcnt = new SqlConnection(GetConnectionString()))
+            {
+                try
+                {
+                    sqlcnt.Open();                   
+                    var result = sqlcnt.QueryMultiple(SqlQuery, SqlParam, commandTimeout: 3000, commandType: type);                    
+                    return result.Read<T0>().ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                finally
+                {
+                    sqlcnt.Close();
+                }
+
+            }
+        }
     }
 }

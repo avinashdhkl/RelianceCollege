@@ -4,12 +4,43 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row">
-    <div class="form-floating">
-        <select class="form-select" asp-for="Gender" asp-items="@Model.GenderList" aria-label="Floating label select example">
-            <option value="">Please Select Gender</option>          
-        </select>
-        <label for="floatingSelect">Gender</label>
+<form asp-action="Manage" asp-controller="Teacher" method="post" >
+    <div class="row">
+        <div class="form-floating">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" asp-for="FullName" placeholder="Full Name">
+                <label for="floatingInput">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" asp-for="Address" placeholder="Address">
+                <label for="floatingInput">Address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" asp-for="Mobileno" placeholder="Mobileno">
+                <label for="floatingInput">Mobile no</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" asp-for="Email" placeholder="Email">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" asp-for="Gender" asp-items="@Model.GenderList" aria-label="Floating label select example">
+                    <option value="">Please Select Gender</option>
+                </select>
+                <label for="floatingSelect">Gender</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" asp-for="Sem" asp-items="@Model.SemesterList" aria-label="Floating label select example">
+                    <option value="">Please Select Semester</option>
+                </select>
+                <label for="floatingSelect">Semester</label>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </div>
     </div>
-</div>
+</form>
+
 

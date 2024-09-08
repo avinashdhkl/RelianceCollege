@@ -27,5 +27,18 @@ namespace DatabaseLayer.Drapper
                 throw;
             }
         }
+
+        public T0 DatawithSingleObject<T0>(string storeProducer, object param)
+        {
+            try
+            {
+                var resp = _execute.ExecuteQuery<T0>(storeProducer, param);
+                return resp.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }

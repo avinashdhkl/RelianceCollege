@@ -44,6 +44,36 @@ namespace BusinessLayer.Business.TeacherBusiness
             }
         }
 
-        
+        public TeacherModel Insert(TeacherParam teacherParam)
+        {
+            try
+            {
+                var Flag = "insert";
+                var param = new
+                {
+                    Flag = Flag,
+                    FullName = teacherParam.FullName,
+                    Address = teacherParam.Address,
+                    Email = teacherParam.Email,
+                    Mobileno = teacherParam.Mobileno,
+                    Gender = teacherParam.Gender,
+                    Sem = teacherParam.Sem,
+                };               
+                var resp = _drapper.DatawithSingleObject<TeacherModel>("Teacher.Proc_TeacherDetails", param);               
+                return resp;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                return new TeacherModel
+                {
+                    Code = "101",
+                    Message = ex.Message,
+
+                };
+            }
+        }
     }
 }

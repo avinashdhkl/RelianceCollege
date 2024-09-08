@@ -13,3 +13,4 @@ D:\BCA\Project\RelianceCollege\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
 D:\BCA\Project\RelianceCollege\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
 D:\BCA\Project\RelianceCollege\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 D:\BCA\Project\RelianceCollege\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+D:\BCA\Project\RelianceCollege\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json

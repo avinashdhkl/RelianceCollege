@@ -10,3 +10,4 @@ D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.dll
 D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\refint\DatabaseLayer.dll
 D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.pdb
 D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\ref\DatabaseLayer.dll
+D:\BCA\Project\RelianceCollege\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.sourcelink.json

@@ -10,5 +10,6 @@ namespace DatabaseLayer.Execute
     public interface IExecute
     {
         List<object> ExecuteQuery<T0,T1>(string SqlQuery,object SqlParam,CommandType type=CommandType.StoredProcedure);
+        List<T0> ExecuteQuery<T0>(string SqlQuery, object SqlParam, CommandType type = CommandType.StoredProcedure);
     }
 }
