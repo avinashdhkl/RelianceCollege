@@ -13,5 +13,9 @@ namespace BusinessLayer.Business.TeacherBusiness
     {
          TeacherModel GetDropDown(string UserName = "Admin");
         TeacherModel Insert(TeacherParam teacherParam);
+        TeacherModel GridList(TeacherParam teacherParam);
+        TeacherModel GetDetailsById(TeacherParam teacherParam);
+        TeacherModel Update(TeacherParam teacherParam);
+
     }
 }

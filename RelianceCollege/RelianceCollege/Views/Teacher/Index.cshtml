@@ -1,0 +1,46 @@
+﻿@model BusinessLayer.Business.Model.Teacher.TeacherModel;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <table class="table table-hover">
+    <thead>
+        <tr>
+                <th>S.No</th>
+                <th>Full Name</th>
+                <th>Mobile No</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Semester</th>
+                <th>Action</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        @if(Model.GridList.Count()>0){
+
+                @foreach (var item in  Model.GridList)
+                {
+                    <tr>
+                        <td>@item.SNo</td>
+                        <td>@item.FullName</td>
+                        <td>@item.Mobileno</td>
+                        <td>@item.Email</td>
+                        <td>@item.Address</td>
+                        <td>@item.Gender</td>
+                        <td>@item.Sem</td>
+                        <td>
+                            <a href="/Teacher/Manage?Id=@item.RowId" type="button" class="btn btn-warning" title="Edit">Edit</a>
+                        </td>
+                    </tr>
+                }
+            }
+        
+    </tbody>
+    </table>
+</div>
+
+

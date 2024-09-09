@@ -16,6 +16,19 @@ namespace DatabaseLayer.Drapper
             _execute = execute;
         }
 
+        public List<T0> DataWithListObject<T0>(string storeProducer, object param)
+        {
+            try
+            {
+                var resp = _execute.ExecuteQuery<T0>(storeProducer, param);
+                return resp;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
         public List<object> DatawithMultiple<T0, T1>(string storeProducer, object param)
         {
             try

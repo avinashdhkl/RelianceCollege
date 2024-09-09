@@ -15,6 +15,35 @@ namespace BusinessLayer.Business.TeacherBusiness
         {
             _drapper = drapper;
         }
+
+        public TeacherModel GetDetailsById(TeacherParam teacherParam)
+        {
+            try
+            {
+                teacherParam.Flag = "GetDetailsById";
+                var param = new
+                {
+                    Flag = teacherParam.Flag,
+                    RowId = teacherParam.RowId,
+                    
+                };
+                var resp = _drapper.DatawithSingleObject<TeacherModel>("Teacher.Proc_TeacherDetails", param);
+                return resp;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                return new TeacherModel
+                {
+                    Code = "101",
+                    Message = ex.Message,
+
+                };
+            }
+        }
+
         public TeacherModel GetDropDown(string UserName = "Admin")
         {
             try
@@ -44,6 +73,35 @@ namespace BusinessLayer.Business.TeacherBusiness
             }
         }
 
+        public TeacherModel GridList(TeacherParam teacherParam)
+        {
+            try
+            {
+                var Flag = "GridList";
+                var param = new
+                {
+                    Flag = Flag,
+                    
+                };
+                TeacherModel teacherModel = new TeacherModel();
+                var resp = _drapper.DataWithListObject<TeacherParam>("Teacher.Proc_TeacherDetails", param);
+                teacherModel.GridList = resp;
+                teacherModel.Code = "100";
+                teacherModel.Message = "Success";
+                return teacherModel;
+            }
+            catch (Exception ex)
+            {
+
+                return new TeacherModel
+                {
+                    Code = "101",
+                    Message = ex.Message,
+
+                };
+            }
+        }
+
         public TeacherModel Insert(TeacherParam teacherParam)
         {
             try
@@ -60,6 +118,39 @@ namespace BusinessLayer.Business.TeacherBusiness
                     Sem = teacherParam.Sem,
                 };               
                 var resp = _drapper.DatawithSingleObject<TeacherModel>("Teacher.Proc_TeacherDetails", param);               
+                return resp;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                return new TeacherModel
+                {
+                    Code = "101",
+                    Message = ex.Message,
+
+                };
+            }
+        }
+
+        public TeacherModel Update(TeacherParam teacherParam)
+        {
+            try
+            {
+                var Flag = "update";
+                var param = new
+                {
+                    Flag = Flag,
+                    FullName = teacherParam.FullName,
+                    Address = teacherParam.Address,
+                    Email = teacherParam.Email,
+                    Mobileno = teacherParam.Mobileno,
+                    Gender = teacherParam.Gender,
+                    Sem = teacherParam.Sem,
+                    RowId = teacherParam.RowId,
+                };
+                var resp = _drapper.DatawithSingleObject<TeacherModel>("Teacher.Proc_TeacherDetails", param);
                 return resp;
 
 

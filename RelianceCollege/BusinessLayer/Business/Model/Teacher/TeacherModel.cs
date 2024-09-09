@@ -15,6 +15,7 @@ namespace BusinessLayer.Business.Model.Teacher
         public List<SelectListItem>? SemesterList { get; set; }
         public List<SelectListModel>? ListGender { get; set; }
         public List<SelectListModel>? ListSemester { get; set; }
+        public List<TeacherParam>? GridList { get; set; }
     }
     public class TeacherParam
     {
@@ -26,6 +27,7 @@ namespace BusinessLayer.Business.Model.Teacher
         public string? Gender { get; set; }
         public string? Sem { get; set; }
         public string? Flag { get; set; }
+        public string? SNo { get; set; }
     }
     public class SelectListModel
     {
