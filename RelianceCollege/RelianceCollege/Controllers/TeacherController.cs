@@ -14,6 +14,7 @@ namespace RelianceCollege.Controllers
         {
             _teacherBusiness = teacherBusiness;
         }
+
         [HttpGet]
         public IActionResult Index(TeacherParam teacherParam)
         {
