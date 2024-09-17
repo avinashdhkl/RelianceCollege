@@ -1,7 +1,8 @@
-﻿using BusinessLayer.Business.StudentBusiness;
+﻿
 using BusinessLayer.Business.TeacherBusiness;
 using DatabaseLayer.Drapper;
 using DatabaseLayer.Execute;
+using RelianceCollege.Service.Student;
 
 namespace RelianceCollege.Helper.DependencyInjection
 {
@@ -14,9 +15,12 @@ namespace RelianceCollege.Helper.DependencyInjection
             services.AddSingleton<IDrapper, Drapper>();
             #endregion Data layer
             #region Business Layer
-            services.AddSingleton<IStudentBusiness, StudentBusiness>();
+            //services.AddSingleton<IStudentBusiness, StudentBusiness>();
             services.AddSingleton<ITeacherBusiness, TeacherBusiness>();
             #endregion Business Layer
+            #region Entity
+            services.AddScoped<IStudentService, StudentService>();
+            #endregion Entity
             return services;
          
         }
