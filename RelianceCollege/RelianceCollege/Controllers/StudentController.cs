@@ -17,7 +17,9 @@ namespace RelianceCollege.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            StudentModel studentModel= new StudentModel();
+            var resp = _studentService.GetGridList(studentModel).Result;
+            return View(resp);
         }
         [HttpGet]
         public IActionResult Manage()
