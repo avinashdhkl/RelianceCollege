@@ -31,7 +31,7 @@ namespace RelianceCollege.Controllers
         [HttpPost]
         public IActionResult Manage(StudentResp studentResp)
         {
-            var studentRepo = new StudentResp
+            var studentmodel = new StudentModel
             {
                 FullName = studentResp.FullName,
                 Address = studentResp.Address,
@@ -40,7 +40,7 @@ namespace RelianceCollege.Controllers
                 Semster = studentResp.Semster,
                 Gender = studentResp.Gender,
             };
-            var resp = _studentService.Insert(studentRepo).Result;
+            var resp = _studentService.Insert(studentmodel).Result;
            return RedirectToAction("Index");
         }
     }
